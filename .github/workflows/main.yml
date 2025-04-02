@@ -45,8 +45,8 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            viniciusalmeida1990/conversao-temperatura:v${{ github.run_number }}
-            viniciusalmeida1990/conversao-temperatura:latest
+            viniciusalmeida/conversao-temperatura:v${{ github.run_number }}
+            viniciusalmeida/conversao-temperatura:latest
 
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@0.16.1
